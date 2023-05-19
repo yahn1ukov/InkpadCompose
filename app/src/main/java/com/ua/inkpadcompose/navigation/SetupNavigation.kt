@@ -1,5 +1,6 @@
 package com.ua.inkpadcompose.navigation
 
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.navigation.NavHostController
@@ -9,6 +10,7 @@ import com.ua.inkpadcompose.navigation.destinations.noteComposable
 import com.ua.inkpadcompose.presentation.viewmodels.SharedViewModel
 import com.ua.inkpadcompose.utils.Constants.LIST_SCREEN
 
+@ExperimentalMaterial3Api
 @Composable
 fun SetupNavigation(
     navController: NavHostController,

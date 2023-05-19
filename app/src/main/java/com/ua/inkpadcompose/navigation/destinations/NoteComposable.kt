@@ -1,5 +1,6 @@
 package com.ua.inkpadcompose.navigation.destinations
 
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
@@ -8,6 +9,7 @@ import com.ua.inkpadcompose.utils.Action
 import com.ua.inkpadcompose.utils.Constants.NOTE_ARGUMENT_KEY
 import com.ua.inkpadcompose.utils.Constants.NOTE_SCREEN
 
+@ExperimentalMaterial3Api
 fun NavGraphBuilder.noteComposable(
     navigateToListScreen: (Action) -> Unit
 ) {

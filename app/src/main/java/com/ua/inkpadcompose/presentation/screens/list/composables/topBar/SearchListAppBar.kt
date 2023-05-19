@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables
+package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -20,11 +20,10 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
-import androidx.compose.ui.tooling.preview.Preview
 import com.ua.inkpadcompose.R
 import com.ua.inkpadcompose.utils.Constants.TOP_APP_BAR_HEIGHT
 
-@OptIn(ExperimentalMaterial3Api::class)
+@ExperimentalMaterial3Api
 @Composable
 fun SearchListAppBar(
     text: String,
@@ -35,7 +34,7 @@ fun SearchListAppBar(
     Surface(
         modifier = Modifier
             .fillMaxWidth()
-            .height(TOP_APP_BAR_HEIGHT),
+            .height(TOP_APP_BAR_HEIGHT)
     ) {
         TextField(
             modifier = Modifier

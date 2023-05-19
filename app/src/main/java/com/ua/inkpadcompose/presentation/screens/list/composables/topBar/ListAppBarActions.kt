@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables
+package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
@@ -20,7 +20,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import com.ua.inkpadcompose.R
 import com.ua.inkpadcompose.data.models.enums.Priority
 import com.ua.inkpadcompose.presentation.theme.PRIORITY_INDICATOR_SIZE

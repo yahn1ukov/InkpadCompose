@@ -16,4 +16,6 @@ object Constants {
     val PRIORITIES_FILTER = listOf(Priority.LOW, Priority.HIGH, Priority.NONE)
 
     val TOP_APP_BAR_HEIGHT = 64.dp
+
+    val NOTE_ITEM_ELEVATION = 2.dp
 }
