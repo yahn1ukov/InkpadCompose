@@ -14,8 +14,8 @@ interface NoteDao {
     @Query("SELECT * FROM notes")
     fun getAll(): Flow<List<NoteEntity>>
 
-    @Query("SELECT * FROM notes WHERE id=:id")
-    fun get(id: Int): Flow<NoteEntity>
+    @Query("SELECT * FROM notes WHERE id=:noteId")
+    fun get(noteId: Int): Flow<NoteEntity>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(note: NoteEntity)

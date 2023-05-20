@@ -9,9 +9,9 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import com.ua.inkpadcompose.presentation.screens.list.composables.content.ListContent
-import com.ua.inkpadcompose.presentation.screens.list.composables.topBar.ListAppBar
-import com.ua.inkpadcompose.presentation.screens.list.composables.topBar.ListFloatingActionButton
+import com.ua.inkpadcompose.presentation.screens.list.components.ListFloatingActionButton
+import com.ua.inkpadcompose.presentation.screens.list.components.content.ListContent
+import com.ua.inkpadcompose.presentation.screens.list.components.topBar.ListAppBar
 import com.ua.inkpadcompose.presentation.viewmodels.SharedViewModel
 import com.ua.inkpadcompose.utils.SearchAppBarState
 

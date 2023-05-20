@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.content
+package com.ua.inkpadcompose.presentation.screens.list.components.content
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items

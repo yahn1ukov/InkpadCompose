@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
+package com.ua.inkpadcompose.presentation.screens.list.components.topBar
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
@@ -8,9 +8,11 @@ import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -25,15 +27,29 @@ import com.ua.inkpadcompose.data.models.enums.Priority
 import com.ua.inkpadcompose.presentation.theme.PRIORITY_INDICATOR_SIZE
 import com.ua.inkpadcompose.utils.Constants
 
+@ExperimentalMaterial3Api
 @Composable
-fun ListAppBarActions(
+fun DefaultListAppBar(
     onSearchClicked: () -> Unit,
     onSortClicked: (Priority) -> Unit,
     onDeleteAllClicked: () -> Unit
 ) {
-    SearchAction(onSearchClicked = onSearchClicked)
-    SortAction(onSortClicked = onSortClicked)
-    DeleteAllAction(onDeleteAllClicked = onDeleteAllClicked)
+    TopAppBar(
+        title = {
+            Text(text = stringResource(id = R.string.list_screen_title))
+        },
+        actions = {
+            SearchAction(
+                onSearchClicked = onSearchClicked
+            )
+            SortAction(
+                onSortClicked = onSortClicked
+            )
+            DeleteAllAction(
+                onDeleteAllClicked = onDeleteAllClicked
+            )
+        }
+    )
 }
 
 @Composable

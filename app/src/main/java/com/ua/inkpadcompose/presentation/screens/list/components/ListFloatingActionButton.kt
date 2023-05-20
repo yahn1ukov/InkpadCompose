@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
+package com.ua.inkpadcompose.presentation.screens.list.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add

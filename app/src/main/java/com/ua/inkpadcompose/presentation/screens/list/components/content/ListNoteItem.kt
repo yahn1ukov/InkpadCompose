@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.content
+package com.ua.inkpadcompose.presentation.screens.list.components.content
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Box
@@ -20,7 +20,6 @@ import androidx.compose.ui.text.style.TextOverflow
 import com.ua.inkpadcompose.data.models.entities.NoteEntity
 import com.ua.inkpadcompose.presentation.theme.LARGE_PADDING
 import com.ua.inkpadcompose.presentation.theme.PRIORITY_INDICATOR_SIZE
-import com.ua.inkpadcompose.utils.Constants.NOTE_ITEM_ELEVATION
 
 @ExperimentalMaterial3Api
 @Composable
@@ -32,7 +31,6 @@ fun ListNoteItem(
         modifier = Modifier
             .fillMaxWidth(),
         shape = RectangleShape,
-        shadowElevation = NOTE_ITEM_ELEVATION,
         onClick = { navigateToNoteScreen(note.id) }
     ) {
         Column(

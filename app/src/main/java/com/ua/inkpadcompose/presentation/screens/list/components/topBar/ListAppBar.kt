@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
+package com.ua.inkpadcompose.presentation.screens.list.components.topBar
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable

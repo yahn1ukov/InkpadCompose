@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.content
+package com.ua.inkpadcompose.presentation.screens.list.components.content
 
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable

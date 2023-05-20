@@ -29,7 +29,8 @@ fun SetupNavigation(
             sharedViewModel = sharedViewModel
         )
         noteComposable(
-            navigateToListScreen = screens.list
+            navigateToListScreen = screens.list,
+            sharedViewModel = sharedViewModel
         )
     }
 }

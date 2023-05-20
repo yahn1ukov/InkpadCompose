@@ -1,6 +1,5 @@
 package com.ua.inkpadcompose.utils
 
-import androidx.compose.ui.unit.dp
 import com.ua.inkpadcompose.data.models.enums.Priority
 
 object Constants {
@@ -15,7 +14,5 @@ object Constants {
 
     val PRIORITIES_FILTER = listOf(Priority.LOW, Priority.HIGH, Priority.NONE)
 
-    val TOP_APP_BAR_HEIGHT = 64.dp
-
-    val NOTE_ITEM_ELEVATION = 2.dp
+    val PRIORITIES_DROP_DOWN = listOf(Priority.HIGH, Priority.MEDIUM, Priority.LOW)
 }

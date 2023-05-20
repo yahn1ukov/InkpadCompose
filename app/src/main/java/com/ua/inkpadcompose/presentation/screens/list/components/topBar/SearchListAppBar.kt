@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.topBar
+package com.ua.inkpadcompose.presentation.screens.list.components.topBar
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -21,7 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import com.ua.inkpadcompose.R
-import com.ua.inkpadcompose.utils.Constants.TOP_APP_BAR_HEIGHT
+import com.ua.inkpadcompose.presentation.theme.TOP_APP_BAR_HEIGHT
 
 @ExperimentalMaterial3Api
 @Composable

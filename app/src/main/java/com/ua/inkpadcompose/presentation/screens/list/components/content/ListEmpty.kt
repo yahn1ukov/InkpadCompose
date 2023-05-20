@@ -1,4 +1,4 @@
-package com.ua.inkpadcompose.presentation.screens.list.composables.content
+package com.ua.inkpadcompose.presentation.screens.list.components.content
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -28,11 +28,11 @@ fun ListEmpty() {
             modifier = Modifier
                 .size(80.dp),
             painter = painterResource(id = R.drawable.ic_box),
-            contentDescription = stringResource(id = R.string.empty_list),
+            contentDescription = stringResource(id = R.string.empty_list_hint),
             tint = MaterialTheme.colorScheme.primary
         )
         Text(
-            text = stringResource(id = R.string.no_notes),
+            text = stringResource(id = R.string.no_notes_text),
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.primary
         )
